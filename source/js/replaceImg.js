@@ -1,0 +1,17 @@
+  window.addEventListener('load', () => {
+    let container = document.querySelectorAll('.replaceImg');
+    container = Array.from(container);
+
+    container.forEach( i => {
+      let source = i.querySelectorAll('source');
+      source = Array.from(source);
+      let image = i.querySelector('img');
+
+      source.forEach( j => {
+        let realsrc = j.getAttribute('data-src');
+        image.srcset = j.setAttribute('srcset', realsrc);
+        //console.log(realsrc);
+      })
+
+    })
+  })

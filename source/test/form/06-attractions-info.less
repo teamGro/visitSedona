@@ -1,0 +1,149 @@
+@import '../vars.less';
+
+.attractions-info {
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+  }
+
+  &__elem {
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+  }
+
+  &__elem--last {
+    margin-bottom: 0;
+  }
+
+  &__select {
+    width: 50px;
+    height: 50px;
+    background-color: @bg-color;
+    margin-right: 30px;
+    position: relative;
+    outline: none;
+  }
+
+  &__select--active::before {
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: #000;
+    width: 3px;
+    height: 12px;
+    top: 19px;
+    left: 17px;
+    transform: rotate(-40deg);
+  }
+
+  &__select--active::after {
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: #000;
+    width: 3px;
+    height: 20px;
+    top: 13px;
+    right: 20px;
+    transform: rotate(50deg);
+  }
+
+  &__select:hover,
+  &_select:focus {
+    background-color: @radio-hover;
+    outline: none;
+  }
+
+  &__note {
+    text-transform: none;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  &__label,
+  &__personal {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width){
+  .attractions-info {
+    width: 100%;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: -25px;
+    position: relative;
+    border: none;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 125px;
+      height: 1px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: @form-border-color;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      width: 125px;
+      height: 1px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background-color: @form-border-color;
+    }
+
+
+    &__wrapper {
+      margin: 50px auto;
+      padding: 0;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 500px;
+      justify-content: space-between;
+      align-items: center;
+      align-content: center;
+    }
+
+    &__title {
+      width: 290px;
+      margin: 0 auto;
+    }
+
+    &__elem {
+      padding: 0;
+      width: 215px;
+
+    }
+
+    &__elem--last {
+      margin-bottom: 35px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width){
+  .attractions-info {
+
+    &__wrapper {
+      width: 100%;
+    }
+
+    &::before {
+      width: 280px;
+    }
+
+    &::after {
+      width: 280px;
+    }
+  }
+}

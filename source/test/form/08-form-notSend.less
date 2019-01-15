@@ -1,0 +1,31 @@
+@import '../vars.less';
+
+.form-notSend {
+  width: 320px;
+  min-height: 280px;
+  margin: 0 auto;
+  padding: 45px 40px 35px;
+  position: absolute;
+  bottom: 525px;
+  background-color: #fff;
+  z-index: 5;
+  box-sizing: border-box;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+
+
+}
+
+@media(min-width: @tablet-width){
+  .form-notSend {
+    width: 400px;
+    min-height: 345px;
+    transform: translateX(-50%);
+    margin-left: 50%;
+    bottom: 275px;
+    padding: 65px 60px 50px;
+
+	 &__btn {
+		 width: 290px;
+	 }
+  }
+}

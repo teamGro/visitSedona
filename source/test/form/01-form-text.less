@@ -1,0 +1,40 @@
+@import '../vars.less';
+
+.form-text {
+  width: 320px;
+  margin: 0 auto;
+  background-color: #fff;
+  min-height: 210px;
+  padding: 44px 20px 22px;
+
+  box-sizing: border-box;
+  border-bottom: 1px solid #e5e5e5;
+
+}
+
+@media (min-width: @tablet-width) {
+  .form-text {
+    width: @tablet-width;
+    min-height: 250px;
+    padding: 75px 140px;
+    border-bottom: none;
+
+    &__title {
+      font-size: 30px;
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-text {
+    width: @desktop-width;
+    min-height: 285px;
+    padding: 115px 375px 0px;
+
+    &__text {
+      width: 490px;
+      padding-bottom: 0;
+    }
+  }
+}

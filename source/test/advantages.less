@@ -1,0 +1,111 @@
+@import "vars.less";
+
+.advantages {
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+  background-color: #fff;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text {
+    margin: 40px auto 29px;
+    box-sizing: border-box;
+  }
+
+  &__text--bold {
+    font-size: 18px;
+    margin-bottom: 29px;
+    display: block;
+    box-sizing: border-box;
+  }
+
+  &__title {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  &__number {
+      margin-bottom: 14px;
+      display: block;
+  }
+
+  &__item--row {
+    background-color: #eeeeee;
+  }
+
+  &__item--wrapper {
+    padding: 35px;
+  }
+
+}
+
+@media (min-width: @tablet-width){
+  .advantages {
+    width: @tablet-width;
+
+    &__wrapper {
+      width: @tablet-width;
+    }
+
+    &__text {
+      width: 625px;
+      margin: 50px auto;
+    }
+
+    &__list {
+      margin: 0;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__item {
+      display: flex;
+    }
+
+    &__item--row {
+      width: 256px;
+      height: 256px
+    }
+
+    &__item--wrapper {
+      padding: 50px;
+      box-sizing: border-box;
+    }
+
+    &__title {
+      font-size: 21px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width){
+  .advantages {
+    width: @desktop-width;
+
+    &__wrapper {
+      width: @desktop-width;
+    }
+
+    &__text {
+      margin: 50px auto;
+    }
+
+    &__item--row {
+      width: 400px;
+    }
+
+    &__item--wrapper {
+      padding: 70px 40px;
+    }
+
+
+  }
+}

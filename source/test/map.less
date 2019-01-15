@@ -1,0 +1,25 @@
+@import 'vars.less';
+
+.map {
+	width: 320px;
+	height: 350px;
+	margin: 0 auto;
+
+	box-sizing: border-box;
+
+	& iframe {
+		overflow: hidden;
+	}
+}
+
+@media(min-width: @tablet-width){
+	.map {
+		width: @tablet-width;
+	}
+}
+
+@media(min-width: @desktop-width){
+	.map {
+		width: @desktop-width;
+	}
+}

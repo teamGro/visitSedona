@@ -1,0 +1,35 @@
+@import '../vars.less';
+
+.emotion-info {
+  border-bottom: none;
+
+  &__personal {
+    width: 280px;
+    min-height: 160px;
+    margin-top: 20px;
+    background-color: @bg-color;
+    border: none;
+    font: inherit;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: none;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: @tablet-width){
+  .emotion-info {
+    width: 100%;
+    padding-top: 0;
+    margin-top: -13px;
+
+    &__wrapper {
+      margin: 45px 0 30px;
+    }
+
+    &__personal {
+      width: 100%;
+    }
+  }
+}

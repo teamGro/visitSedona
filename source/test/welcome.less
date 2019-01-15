@@ -1,0 +1,38 @@
+@import 'vars.less';
+
+.welcome {
+
+  &__wrapper {
+    width: 320px;
+    min-height: 390px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  &__wrapper--page-photo {
+    min-height: 160px;
+  }
+
+
+}
+
+@media (min-width: @tablet-width){
+  .welcome {
+
+    &__wrapper {
+      width: @tablet-width;
+      height: 290px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width){
+  .welcome {
+
+    &__wrapper {
+      width: @desktop-width;
+      min-height: 303px;
+    }
+  }
+}

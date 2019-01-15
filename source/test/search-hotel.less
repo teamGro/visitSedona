@@ -1,0 +1,47 @@
+@import 'vars.less';
+
+
+.search-hotel {
+  margin-bottom: 50px;
+  background-color: #fff;
+  width: 320px;
+  margin: 0 auto;
+
+  &__wrapper {
+    width: 280px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__interesting{
+    font-size: 21px;
+    margin: 30px 0 25px;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .search-hotel {
+    width: @tablet-width;
+
+    &__wrapper {
+      width: 460px;
+    }
+
+    &__interesting {
+      font-size: 30px;
+      margin-bottom: 55px;
+    }
+
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .search-hotel {
+    width: @desktop-width;
+
+
+  }
+}

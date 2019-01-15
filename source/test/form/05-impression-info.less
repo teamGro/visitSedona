@@ -1,0 +1,99 @@
+@import '../vars.less';
+
+.impression-info {
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__elem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+
+  &__elem--first {
+    margin-top: 30px;
+  }
+
+  &__elem--last {
+    margin-bottom: 0;
+  }
+
+  &__select {
+    width: 55px;
+    height: 55px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    position: relative;
+    outline: none;
+  }
+
+  &__select--active::before {
+    content: '';
+    display: block;;
+    position: absolute;
+    background-color: #333333;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    top: 16px;
+    left: 16px;
+  }
+
+  &__note {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: none;
+    width: 210px;
+    padding-left: 20px;
+  }
+
+  &__select:hover,
+  &_select:focus {
+    background-color: @radio-hover;
+    outline: none;
+  }
+
+  &__personal,
+  &__label {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width){
+  .impression-info {
+    width: 420px;
+    border-bottom: none;
+    position: relative;
+    text-align: left;
+    padding-right: 0;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 125px;
+      height: 1px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: @form-border-color;
+    }
+
+    &__elem--first {
+      margin-top: 60px;
+    }
+  }
+}
+
+@media(min-width: @desktop-width){
+  .impression-info {
+    width: 450px;
+
+    &::before {
+      width: 280px;
+    }
+
+  }
+}

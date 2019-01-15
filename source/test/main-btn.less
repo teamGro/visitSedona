@@ -1,0 +1,71 @@
+@import 'vars.less';
+
+.main-btn {
+  font: inherit;
+  text-transform: uppercase;
+  margin: 40px 0 50px;
+  height: 60px;
+  width: 280px;
+  font-size: 21px;
+  color: #ffffff;
+  background-color: @btn-color;
+  border: none;
+
+  &--review {
+    margin: 0;
+    margin-bottom: 50px;
+    height: 60px;
+    width: 280px;
+  }
+
+  &--notSend {
+    margin: 0;
+    margin-top: 30px;
+    height: 60px;
+    width: 180px;
+  }
+
+  &--send {
+    margin: 0;
+    height: 60px;
+    width: 280px;
+  }
+
+  &:hover {
+    background-color: @btn-hover;
+  }
+}
+
+@media(min-width: @tablet-width){
+  .main-btn {
+    width: 460px;
+    margin: 45px auto 60px;
+
+    &--review {
+      margin: 0;
+      margin-left: 60px;
+      width: 325px;
+    }
+
+    &--notSend {
+      margin: 0;
+      width: 270px;
+    }
+
+    &--send {
+      margin: 0;
+      width: 460px;
+    }
+  }
+}
+
+@media(min-width: @desktop-width){
+  .main-btn {
+
+    &--review {
+      margin: 0;
+      margin-left: 120px;
+      width: 480px;
+    }
+  }
+}

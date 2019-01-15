@@ -1,0 +1,40 @@
+@import "vars.less";
+
+.describe {
+  &__title {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 13px;
+  }
+
+  &__text {
+    line-height: 24px;
+    font-size: 13px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .describe {
+      min-height: 250px;
+      padding: 75px 150px;
+      border-bottom: none;
+
+    &__title {
+      font-size: 30px;
+      margin-bottom: 25px;
+    }
+
+    &__text {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .describe {
+    &__header {
+      min-height: 285px;
+      padding: 115px 375px 75px;
+    }
+  }
+}

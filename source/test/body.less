@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'PTSans';
+  font-size: 14px;
+  font-display: swap;
+  src: url(../font/PT_Sans-Web-Regular.ttf) format("truetype");
+  src: url(../font/PT_Sans-Web-Italic.ttf) format("truetype");
+  src: url(../font/PT_Sans-Web-BoldItalic.ttf) format("truetype");
+  src: url(../font/PT_Sans-Web-Bold.ttf) format("truetype");
+}
+body {
+  font-family: 'PTSans', 'Times New Roman';
+  font-size: 14px;
+  line-height: 26px;
+  color: #000;
+  background-color: rgb(242, 242, 242);
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].vision-hide,
+input[type="radio"].vision-hide {
+	position: absolute;
+
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+h2, h3, h4 {
+  margin: 0;
+}
